@@ -58,25 +58,7 @@ const ctas = [
         </div>
 
     </div>
-    <UCard class="mb-6">
-        <div class="flex items-center justify-between mb-8">
-            <h4 class="text-lg text-highlighted font-semibold">Performance Overview</h4>
-            <UIcon name="i-lucide-trending-up" class="w-5 h-5 text-green-600 dark:text-green-500" />
-        </div>
-        <div class="flex items-end justify-between">
-            <div>
-                <p class="text-2xl font-semibold text-green-600 dark:text-green-500">85%</p>
-                <p class="text-sm text-muted">Overall Score</p>
-            </div>
-            <div class="text-right">
-                <p class="text-sm text-muted">Last Review</p>
-                <p class="text-sm text-highlighted font-semibold">Mar 2025</p>
-            </div>
-        </div>
-    </UCard>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-        <Cta v-for="(item, i) in ctas" :key="i" v-bind="item" />
-    </div>
+
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
         <!-- Pending Requests -->
         <div class="flex flex-col items-center justify-between gap-2 p-6 rounded-lg text-white shadow-lg
@@ -107,6 +89,25 @@ const ctas = [
                 <p class="text-xs">Leave Credit</p>
             </div>
         </div>
+    </div>
+    <UCard class="mb-6">
+        <div class="flex items-center justify-between mb-8">
+            <h4 class="text-lg text-highlighted font-semibold">Performance Overview</h4>
+            <UIcon name="i-lucide-trending-up" class="w-5 h-5 text-green-600 dark:text-green-500" />
+        </div>
+        <div class="flex items-end justify-between">
+            <div>
+                <p class="text-2xl font-semibold text-green-600 dark:text-green-500">85%</p>
+                <p class="text-sm text-muted">Overall Score</p>
+            </div>
+            <div class="text-right">
+                <p class="text-sm text-muted">Last Review</p>
+                <p class="text-sm text-highlighted font-semibold">Mar 2025</p>
+            </div>
+        </div>
+    </UCard>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+        <Cta v-for="(item, i) in ctas" :key="i" v-bind="item" />
     </div>
 
 </template>
